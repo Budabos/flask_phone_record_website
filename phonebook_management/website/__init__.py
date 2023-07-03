@@ -17,7 +17,7 @@ def create_app():
     app = Flask(__name__)
     
     app.config["SECRET_KEY"] = "12J3RHRR744"
-    app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:Lucifer_001@localhost:3306/phonecontactdb"
+    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///phonebook.sql"
     app.config['WTF_CSRF_ENABLED'] = True
     
     # for email config
